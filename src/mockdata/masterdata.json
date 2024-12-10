@@ -1,0 +1,151 @@
+{
+    "definitions": {
+        "financial": {
+            "overall": "Lorel ipsum",
+            "SER": "Rating uses a 1–9 rating that represents the probability a company will obtain legal relief from creditors or stop operations without paying creditors in full over the next 12 months. A rating of 1 indicates that the probability is small. A rating of 9 indicates the probability is high. An SER Rating is used as a substitute for the Financial Stress Score (FSS).",
+            "SSI": "uses a 0–10 rating that represents the probability a supplier will experience significant financial stress over the next 90 days. A rating of 0 indicates the probability is small . A rating of 10 indicates the probability is high. SSI is used primarily as a complement to the SER Rating."
+        },
+        "country": {
+            "overall": "Lorel ipsum",
+            "demographicPressures": "Lorel ipsum",
+            "economy": "Lorel ipsum",
+            "stateLegitimacy": "Lorel ipsum",
+            "securityAppratus": "Lorel ipsum",
+            "externalIntervention": "Lorel ipsum",
+            "economicInequality": "Lorel ipsum",
+            "refugeeCrisis": "Lorel ipsum"
+        },
+        "naturalHazard": {
+            "overall": "Lorel ipsum",
+            "earthquakes": "Lorel ipsum",
+            "tsunami": "Lorel ipsum",
+            "coatalFlooding": "Lorel ipsum",
+            "cyclones": "Lorel ipsum",
+            "draoughts": "Lorel ipsum",
+            "seaLevelRise": "Lorel ipsum"
+        },
+        "operational": {
+            "overall": "Lorel ipsum",
+            "deliveryDelays": "Lorel ipsum",
+            "qualityIssues": "Lorel ipsum"
+        }
+    },
+    "data": [
+        {
+            "partName": "axv001",
+            "supplierName": "The Boeing Company",
+            "supplierId": "SUP001",
+            "supplierCountry": "USA",
+            "supplierLong": "87.6298",
+            "supplierLat": "41.8780",
+            "countryRisk": {
+                "overAll": "45.3",
+                "demographicPressures": "5.2",
+                "economy": "2.1",
+                "stateLegitimacy": "4.2",
+                "securityAppratus": "4.7",
+                "externalIntervention": "1",
+                "economicInequality": "4",
+                "refugeeCrisis": "2.2",
+                "overAllInd": "Medium",
+                "demographicPressuresInd": "Medium",
+                "economyInd": "Low",
+                "stateLegitimacyInd": "Low",
+                "securityAppratusInd": "Low",
+                "externalInterventionInd": "Low",
+                "economicInequalityInd": "Low",
+                "refugeeCrisisInd": "Low"
+            },
+            "naturalHazardRisk": {
+                "overAll": "22.56",
+                "earthquakes": "54.87",
+                "tsunami": "49.45",
+                "coatalFlooding": "47.11",
+                "cyclones": "58.28",
+                "draoughts": "10.3",
+                "seaLevelRise": "41.33",
+                "overAllInd": "Medium",
+                "earthquakesInd": "Medium",
+                "tsunamiInd": "Medium",
+                "coatalFloodingInd": "Medium",
+                "cyclonesInd": "Medium",
+                "draoughtsInd": "Low",
+                "seaLevelRiseInd": "Medium"
+            },
+            "financialRisk": {
+                "overAll": "High",
+                "SSI": "7",
+                "SER": "8",
+                "overAllInd": "High",
+                "SSIInd": "High",
+                "SERInd": "High"
+            },
+            "operationalRisk": {
+                "overAll": "High",
+                "deliveryDelays": "30",
+                "qualityIssues": "25",
+                "overAllInd": "High",
+                "deliveryDelaysInd": "High",
+                "qualityIssuesInd": "High"
+            }
+        },
+        {
+            "partName": "axv002",
+            "supplierName": "Airbus",
+            "supplierId": "SUP002",
+            "supplierCountry": "USA",
+            "supplierLong": "1.3124",
+            "supplierLat": "43.6297",
+            "countryRisk": {
+                "overAll": "28.8",
+                "demographicPressures": "3.1",
+                "economy": "3.4",
+                "stateLegitimacy": "1",
+                "securityAppratus": "2.9",
+                "externalIntervention": "0.5",
+                "economicInequality": "2.9",
+                "refugeeCrisis": "2.4",
+                "overAllInd": "Low",
+                "demographicPressuresInd": "Low",
+                "economyInd": "Low",
+                "stateLegitimacyInd": "Low",
+                "securityAppratusInd": "Low",
+                "externalInterventionInd": "Low",
+                "economicInequalityInd": "Low",
+                "refugeeCrisisInd": "Low"
+            },
+            "naturalHazardRisk": {
+                "overAll": "7.54",
+                "earthquakes": "1.99",
+                "tsunami": "0.13",
+                "coatalFlooding": "58.58",
+                "cyclones": "0.01",
+                "draoughts": "2.82",
+                "seaLevelRise": "41.08",
+                "overAllInd": "Medium",
+                "earthquakesInd": "Low",
+                "tsunamiInd": "Low",
+                "coatalFloodingInd": "Medium",
+                "cyclonesInd": "Low",
+                "draoughtsInd": "Low",
+                "seaLevelRiseInd": "Medium"
+            },
+            "financilaRisk": {
+                "overAll": "4",
+                "SSI": "4",
+                "SER": "4",
+                "overAllInd": "Low",
+                "SSIInd": "Low",
+                "SERInd": "Low"
+            },
+            "operationalRisk": {
+                "overAll": "Low",
+                "deliveryDelays": "5",
+                "qualityIssues": "7",
+                "overAllInd": "Low",
+                "deliveryDelaysInd": "Low",
+                "qualityIssuesInd": "Low"
+            }
+        }
+    ]
+}
