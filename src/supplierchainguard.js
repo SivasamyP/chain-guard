@@ -67,7 +67,6 @@ const SupplierDashboard = () => {
   // Handle filter submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const filtered = suppliers.filter((supplier) => {
       const matchesPartName =
         !filters.partName || supplier.partName === filters.partName;
@@ -79,22 +78,23 @@ const SupplierDashboard = () => {
         !filters.supplierCountry || supplier.supplierCountry === filters.supplierCountry;
       const matchesOverAllRisk =
         !filters.overAllRisk || supplier.overAllRisk === filters.overAllRisk;
-      const matchesRisk = !filters['countryRisk.overAllInd'] ||
-        supplier.countryRisk?.overAll === filters['countryRisk.overAllInd'];
-      const matchesNaturalHazardRisk = !filters['naturalHazardRisk.overAllInd'] ||
-        supplier.naturalHazardRisk?.overAll === filters['naturalHazardRisk.overAllInd'];
-      const matchesFinancialRisk = !filters['financialRisk.overAllInd'] ||
-        supplier.financialRisk?.overAll === filters['financialRisk.overAllInd'];
-      const matchesOperationalRisk = !filters['operationalRisk.overAllInd'] ||
-        supplier.operationalRisk?.overAll === filters['operationalRisk.overAllInd'];
-
+  
+      const matchesCountryRisk =
+        !filters.countryRisk || supplier.countryRisk?.overAllInd === filters.countryRisk;
+      const matchesNaturalHazardRisk =
+        !filters.naturalHazardRisk || supplier.naturalHazardRisk?.overAllInd === filters.naturalHazardRisk;
+      const matchesFinancialRisk =
+        !filters.financialRisk || supplier.financialRisk?.overAllInd === filters.financialRisk;
+      const matchesOperationalRisk =
+        !filters.operationalRisk || supplier.operationalRisk?.overAllInd === filters.operationalRisk;
+  
       return (
         matchesPartName &&
         matchesSupplierName &&
         matchesSupplierId &&
         matchesCountry &&
         matchesOverAllRisk &&
-        matchesRisk &&
+        matchesCountryRisk &&
         matchesNaturalHazardRisk &&
         matchesFinancialRisk &&
         matchesOperationalRisk
