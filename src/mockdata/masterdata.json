@@ -36,8 +36,9 @@
             "supplierName": "The Boeing Company",
             "supplierId": "SUP001",
             "supplierCountry": "USA",
-            "supplierLong": "87.6298",
-            "supplierLat": "41.8780",
+            "supplierLong": -87.6298,
+            "supplierLat": 41.8780,
+            "overAllRisk": "High",
             "countryRisk": {
                 "overAll": "45.3",
                 "demographicPressures": "5.2",
@@ -94,8 +95,9 @@
             "supplierName": "Airbus",
             "supplierId": "SUP002",
             "supplierCountry": "USA",
-            "supplierLong": "1.3124",
-            "supplierLat": "43.6297",
+            "supplierLong": 2.3124,
+            "supplierLat": 43.6297,
+            "overAllRisk": "Low",
             "countryRisk": {
                 "overAll": "28.8",
                 "demographicPressures": "3.1",
