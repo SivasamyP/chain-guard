@@ -16,10 +16,11 @@ const SupplierDashboard = () => {
     supplierName: '',
     supplierId: '',
     supplierCountry: '',
-    'countryRisk.overAll': '',
-    'naturalHazardRisk.overAll': '',
-    'financialRisk.overAll': '',
-    'operationalRisk.overAll': '',
+    overAllRisk :'',
+    countryRisk: '',
+    naturalHazardRisk: '',
+    financialRisk: '',
+    operationalRisk: '',
   });
 
   useEffect(() => {
@@ -43,10 +44,11 @@ const SupplierDashboard = () => {
     supplierName: getUniqueValues('supplierName'),
     supplierId: getUniqueValues('supplierId'),
     supplierCountry: getUniqueValues('supplierCountry'),
-    'countryRisk.overAll': getUniqueValues('countryRisk', 'overAll'),
-    'naturalHazardRisk.overAll': getUniqueValues('naturalHazardRisk', 'overAll'),
-    'financialRisk.overAll': getUniqueValues('financialRisk', 'overAll'),
-    'operationalRisk.overAll': getUniqueValues('operationalRisk', 'overAll'),
+    overAllRisk: getUniqueValues('overAllRisk'),
+    countryRisk: getUniqueValues('countryRisk', 'overAllInd'),
+    naturalHazardRisk: getUniqueValues('naturalHazardRisk', 'overAllInd'),
+    financialRisk: getUniqueValues('financialRisk', 'overAllInd'),
+    operationalRisk: getUniqueValues('operationalRisk', 'overAllInd'),
   };
 
   // Sidebar toggle handler
@@ -75,20 +77,23 @@ const SupplierDashboard = () => {
         !filters.supplierId || supplier.supplierId === filters.supplierId;
       const matchesCountry =
         !filters.supplierCountry || supplier.supplierCountry === filters.supplierCountry;
-      const matchesRisk = !filters['countryRisk.overAll'] ||
-        supplier.countryRisk?.overAll === filters['countryRisk.overAll'];
-      const matchesNaturalHazardRisk = !filters['naturalHazardRisk.overAll'] ||
-        supplier.naturalHazardRisk?.overAll === filters['naturalHazardRisk.overAll'];
-      const matchesFinancialRisk = !filters['financialRisk.overAll'] ||
-        supplier.financialRisk?.overAll === filters['financialRisk.overAll'];
-      const matchesOperationalRisk = !filters['operationalRisk.overAll'] ||
-        supplier.operationalRisk?.overAll === filters['operationalRisk.overAll'];
+      const matchesOverAllRisk =
+        !filters.overAllRisk || supplier.overAllRisk === filters.overAllRisk;
+      const matchesRisk = !filters['countryRisk.overAllInd'] ||
+        supplier.countryRisk?.overAll === filters['countryRisk.overAllInd'];
+      const matchesNaturalHazardRisk = !filters['naturalHazardRisk.overAllInd'] ||
+        supplier.naturalHazardRisk?.overAll === filters['naturalHazardRisk.overAllInd'];
+      const matchesFinancialRisk = !filters['financialRisk.overAllInd'] ||
+        supplier.financialRisk?.overAll === filters['financialRisk.overAllInd'];
+      const matchesOperationalRisk = !filters['operationalRisk.overAllInd'] ||
+        supplier.operationalRisk?.overAll === filters['operationalRisk.overAllInd'];
 
       return (
         matchesPartName &&
         matchesSupplierName &&
         matchesSupplierId &&
         matchesCountry &&
+        matchesOverAllRisk &&
         matchesRisk &&
         matchesNaturalHazardRisk &&
         matchesFinancialRisk &&
@@ -106,10 +111,11 @@ const SupplierDashboard = () => {
       supplierName: '',
       supplierId: '',
       supplierCountry: '',
-      'countryRisk.overAll': '',
-      'naturalHazardRisk.overAll': '',
-      'financialRisk.overAll': '',
-      'operationalRisk.overAll': '',
+      overAllRisk :'',
+      countryRisk: '',
+      naturalHazardRisk: '',
+      financialRisk: '',
+      operationalRisk: '',
     });
     setFilteredSuppliers(suppliers);
   };
