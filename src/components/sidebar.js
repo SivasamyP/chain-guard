@@ -63,7 +63,6 @@ const Sidebar = ({
           </form>
         )}
 
-        {/* Toggle button container - positioned absolutely in the middle */}
         <div className="absolute top-1/2 -translate-y-1/2 right-0">
           <button
             onClick={toggleSidebar}
