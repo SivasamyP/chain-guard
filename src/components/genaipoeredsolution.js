@@ -22,7 +22,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
     const openPopup = async (supplierName) => {
         const url = 'https://api.openai.com/v1/chat/completions';
         const body = {
-            model: "gpt-3.5-turbo", // or "gpt-4" if you want to use GPT-4
+            model: "gpt-3.5-turbo", 
             messages: [{ role: 'user', content: "Top 5 alternate suppliers for " + supplierName + " with supplier name, contact numbdetails and country name.These three are mandatory fields" }],
             max_tokens: 150,
         };
@@ -32,7 +32,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': '', // Replace with your OpenAI API key
+                    'Authorization': '', 
                 },
                 body: JSON.stringify(body),
             });
