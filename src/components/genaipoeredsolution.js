@@ -23,7 +23,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
         const url = 'https://api.openai.com/v1/chat/completions';
         const body = {
             model: "gpt-3.5-turbo", // or "gpt-4" if you want to use GPT-4
-            messages: [{ role: 'user', content: "Top 5 alternate suppliers for " + supplierName + " with supplier name, contact details # and country name.These three are mandatory fields" }],
+            messages: [{ role: 'user', content: "Top 5 alternate suppliers for " + supplierName + " with supplier name, contact numbdetails and country name.These three are mandatory fields" }],
             max_tokens: 150,
         };
 
@@ -32,7 +32,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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', // Replace with your OpenAI API key
+                    'Authorization': '', // Replace with your OpenAI API key
                 },
                 body: JSON.stringify(body),
             });
