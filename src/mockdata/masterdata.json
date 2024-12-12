@@ -1,4 +1,35 @@
-{
+{   
+    "definitions": {
+        "financial": {
+            "overall": "The overall financial risk rating represents the likelihood of a supplier facing financial challenges, including the probability of insolvency or experiencing significant financial stress over a specified period. This risk is calculated using a combination of the Supplier's Financial Stress Score (FSS) and additional factors such as industry stability and historical performance.",
+            "SER": "The Supplier’s External Rating (SER) is a 1–9 scale used to assess the likelihood of a company obtaining legal relief from creditors or ceasing operations without paying creditors in full over the next 12 months. A rating of 1 represents a low probability of financial distress, while a rating of 9 indicates a high likelihood of failure. SER provides an alternative to traditional financial health metrics, serving as an early warning for suppliers' ability to manage financial obligations.",
+            "SSI": "The Supplier Stress Index (SSI) uses a scale from 0–10 to evaluate the probability that a supplier will experience significant financial stress within the next 90 days. A rating of 0 indicates a low probability, while a rating of 10 represents a high likelihood of financial difficulties. The SSI is a critical indicator used alongside the SER to predict short-term financial risk for suppliers."
+        },
+        "country": {
+            "overall": "The overall country risk is derived from the combined data of the Fragile States Index (FSI) and the World Risk Index (WRI), providing a comprehensive view of the potential risk associated with doing business in a given country. This rating evaluates a country’s stability and its susceptibility to both internal and external shocks, such as economic collapse, conflict, or natural disasters.",
+            "demographicPressures": "This factor assesses the demographic conditions in a country, including population growth rates, age distribution, and urbanization. Higher demographic pressure increases the likelihood of social unrest and economic strain, contributing to higher risk.",
+            "economy": "Economic risk is calculated by analyzing a country's economic health, including GDP growth, inflation rates, and overall economic stability. Countries with weaker economies or unstable fiscal conditions are considered to have higher economic risk.",
+            "stateLegitimacy": "State legitimacy measures the effectiveness and authority of government institutions in managing national affairs. Countries with weak or illegitimate governance structures tend to have higher risks, including the potential for political instability and public discontent.",
+            "securityAppratus": "Security apparatus evaluates a country’s ability to maintain law and order through its police and military institutions. Poorly functioning security systems increase the risk of crime, civil unrest, and armed conflict.",
+            "externalIntervention": "External intervention measures the influence and impact of foreign powers in a country's internal affairs. High levels of foreign intervention (such as military presence or political influence) can destabilize a nation, contributing to increased risk.",
+            "economicInequality": "This indicator assesses income disparity and social inequality within a country. A high level of inequality can lead to social tensions, protests, and political instability, raising the overall risk.",
+            "refugeeCrisis": "The refugee crisis indicator reflects the number of displaced people within or crossing the borders of a country. Countries with a high number of refugees often face significant economic and social challenges, contributing to higher risk."
+        },
+        "naturalHazard": {
+            "overall": "The overall natural hazard risk rating evaluates the probability of a country being affected by natural disasters, including earthquakes, tsunamis, floods, and other extreme weather events. This rating is derived from multiple disaster-related data sources, including vulnerability to different types of natural hazards and exposure to ongoing environmental changes.",
+            "earthquakes": "The earthquake risk rating measures the likelihood of seismic activity in a country, based on historical data, fault lines, and current geological conditions. Countries in high-risk zones are rated higher for earthquake-related hazards.",
+            "tsunami": "The tsunami risk is calculated by assessing the proximity of a country to tectonic plate boundaries and coastlines that are vulnerable to large oceanic waves. Countries with coastlines along active tectonic zones or with histories of tsunamis will receive higher ratings.",
+            "coatalFlooding": "This factor evaluates the risk of coastal flooding caused by rising sea levels, storm surges, or hurricanes. Vulnerability is determined by coastal geography, population density near the coast, and the effectiveness of flood control measures.",
+            "cyclones": "Cyclone risk is determined by the frequency of cyclonic storms that impact a region, including hurricanes, typhoons, and tropical storms. Coastal countries in hurricane-prone areas typically face higher cyclone risk.",
+            "draoughts": "Drought risk evaluates the likelihood of water shortages and extended dry periods in a country. This risk is based on historical data, climate patterns, and the country’s ability to manage water resources.",
+            "seaLevelRise": "Sea level rise risk assesses the long-term threat of rising ocean levels affecting low-lying areas, islands, and coastal infrastructure. Countries that are geographically located in vulnerable regions receive higher ratings."
+        },
+        "operational": {
+            "overall": "Operational risk encompasses the likelihood that a supplier will face challenges in meeting its operational objectives, including issues related to supply delays, quality problems, or other internal performance issues. This risk is derived from historical internal data such as the frequency of delivery delays and quality issues.",
+            "deliveryDelays": "The delivery delays risk measures the frequency and scale of delays in delivering goods or services from a supplier to its customers. This risk is calculated by tracking historical delivery performance, delays in meeting timelines, and causes of those delays.",
+            "qualityIssues": "Quality issues risk evaluates the percentage of product quality problems encountered during the production or delivery process. This is based on historical data of product defects, returns, or customer complaints related to product quality. A higher percentage of quality issues results in a higher operational risk rating."
+        }
+    },
     "data": [
       {
         "partName": "axv001",
