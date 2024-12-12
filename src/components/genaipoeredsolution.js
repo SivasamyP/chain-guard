@@ -20,7 +20,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
 
     // Handle opening the popup and calling ChatGPT
     const openPopup = async (supplierName) => {
-        const url = 'https://api.openai.com/v1/chat/completions';
+        //const url = 'https://api.openai.com/v1/chat/completions';
         const body = {
             model: "gpt-3.5-turbo", 
             messages: [{ role: 'user', content: "Top 5 alternate suppliers for " + supplierName + " with supplier name, contact numbdetails and country name.These three are mandatory fields" }],
