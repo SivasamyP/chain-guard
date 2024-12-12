@@ -32,7 +32,8 @@
     },
     "data": [
       {
-        "partName": "axv001",
+        "partNumber": "axv001",
+        "partName": "Fuselage Sections",
         "supplierName": "Boeing",
         "supplierId": "SUP001",
         "supplierCountry": "USA",
@@ -91,7 +92,8 @@
         }
       },
       {
-        "partName": "axv002",
+        "partNumber": "axv002",
+        "partName": "Wing Spars",
         "supplierName": "Honeywell Aerospace",
         "supplierId": "SUP002",
         "supplierCountry": "USA",
@@ -150,7 +152,8 @@
         }
       },
       {
-        "partName": "axv003",
+        "partNumber": "axv003",
+        "partName": "Empennage",
         "supplierName": "General Electric Aviation",
         "supplierId": "SUP003",
         "supplierCountry": "USA",
@@ -209,7 +212,8 @@
         }
       },
       {
-        "partName": "axv004",
+        "partNumber": "axv004",
+        "partName": "Landing Gear Assembly",
         "supplierName": "Collins Aerospace",
         "supplierId": "SUP004",
         "supplierCountry": "USA",
@@ -268,7 +272,8 @@
         }
       },
       {
-            "partName": "axv005",
+            "partNumber": "axv005",
+            "partName": "Rudder",
             "supplierName": "Raytheon Technologies",
             "supplierId": "SUP005",
             "supplierCountry": "USA",
@@ -327,7 +332,8 @@
             }
           },
           {
-            "partName": "axv006",
+            "partNumber": "axv006",
+            "partName": "Flap Actuators",
             "supplierName": "Lockheed Martin",
             "supplierId": "SUP006",
             "supplierCountry": "USA",
@@ -386,7 +392,8 @@
             }
           },
           {
-            "partName": "axv007",
+            "partNumber": "axv007",
+            "partName": "Ailerons",
             "supplierName": "Northrop Grumman",
             "supplierId": "SUP007",
             "supplierCountry": "USA",
@@ -445,7 +452,8 @@
             }
           },
           {
-            "partName": "axv008",
+            "partNumber": "axv008",
+            "partName": "Wing Slats",
             "supplierName": "General Dynamics",
             "supplierId": "SUP008",
             "supplierCountry": "USA",
@@ -504,7 +512,8 @@
             }
           },
           {
-                "partName": "axv009",
+                "partNumber": "axv009",
+                "partName": "Winglets",
                 "supplierName": "L3 Harris Technologies",
                 "supplierId": "SUP009",
                 "supplierCountry": "USA",
@@ -563,7 +572,8 @@
                 }
               },
               {
-                "partName": "axv010",
+                "partNumber": "axv010",
+                "partName": "Horizontal Stabilizer",
                 "supplierName": "Moog Inc.",
                 "supplierId": "SUP010",
                 "supplierCountry": "USA",
@@ -622,7 +632,8 @@
                 }
               },
               {
-                "partName": "axv011",
+                "partNumber": "axv011",
+                "partName": "Vertical Stabilizer",
                 "supplierName": "Sikorsky Aircraft",
                 "supplierId": "SUP011",
                 "supplierCountry": "USA",
@@ -681,7 +692,8 @@
                 }
               },
               {
-                "partName": "axv012",
+                "partNumber": "axv012",
+                "partName": "Bulkheads",
                 "supplierName": "B/E Aerospace",
                 "supplierId": "SUP012",
                 "supplierCountry": "USA",
@@ -740,7 +752,8 @@
                 }
           },
           {
-                "partName": "axv013",
+                "partNumber": "axv013",
+                "partName": "Floor Beams",
                 "supplierName": "Rockwell Collins",
                 "supplierId": "SUP013",
                 "supplierCountry": "USA",
@@ -799,7 +812,8 @@
                 }
               },
               {
-                "partName": "axv014",
+                "partNumber": "axv014",
+                "partName": "Cargo Doors",
                 "supplierName": "Textron Aviation",
                 "supplierId": "SUP014",
                 "supplierCountry": "USA",
@@ -858,7 +872,8 @@
                 }
               },
               {
-                "partName": "axv015",
+                "partNumber": "axv015",
+                "partName": "Turbofan Engines",
                 "supplierName": "AAR Corp",
                 "supplierId": "SUP015",
                 "supplierCountry": "USA",
@@ -917,7 +932,8 @@
                 }
               },
               {
-                "partName": "axv016",
+                "partNumber": "axv016",
+                "partName": "Engine Blades",
                 "supplierName": "Sierra Nevada Corporation",
                 "supplierId": "SUP016",
                 "supplierCountry": "USA",
@@ -976,7 +992,8 @@
                 }
           },
           {
-                "partName": "axv017",
+                "partNumber": "axv017",
+                "partName": "Engine Compressors",
                 "supplierName": "DJO Global Aerospace",
                 "supplierId": "SUP017",
                 "supplierCountry": "USA",
@@ -1035,7 +1052,8 @@
                 }
               },
               {
-                "partName": "axv018",
+                "partNumber": "axv018",
+                "partName": "Engine Turbines",
                 "supplierName": "Special Metals Corporation",
                 "supplierId": "SUP018",
                 "supplierCountry": "USA",
@@ -1094,7 +1112,8 @@
                 }
               },
               {
-                "partName": "axv019",
+                "partNumber": "axv019",
+                "partName": "Fuel Injectors",
                 "supplierName": "Mitsubishi Heavy Industries",
                 "supplierId": "SUP019",
                 "supplierCountry": "Japan",
@@ -1153,7 +1172,8 @@
                 }
               },
               {
-                "partName": "axv020",
+                "partNumber": "axv020",
+                "partName": "Nacelles (Engine Covers)",
                 "supplierName": "BASF",
                 "supplierId": "SUP020",
                 "supplierCountry": "Germany",
@@ -1212,7 +1232,8 @@
                 }
           },
           {
-                "partName": "axv021",
+                "partNumber": "axv021",
+                "partName": "Exhaust Systems",
                 "supplierName": "Universal Alloy Corporation",
                 "supplierId": "SUP021",
                 "supplierCountry": "USA",
@@ -1271,7 +1292,8 @@
                 }
               },
               {
-                "partName": "axv022",
+                "partNumber": "axv022",
+                "partName": "Engine Mounts",
                 "supplierName": "Aleris Aerospace",
                 "supplierId": "SUP022",
                 "supplierCountry": "USA",
@@ -1330,7 +1352,8 @@
                 }
               },
               {
-                "partName": "axv023",
+                "partNumber": "axv023",
+                "partName": "Thrust Reversers",
                 "supplierName": "Firth Rixson",
                 "supplierId": "SUP023",
                 "supplierCountry": "United Kingdom",
@@ -1389,7 +1412,8 @@
                 }
               },
               {
-                "partName": "axv024",
+                "partNumber": "axv024",
+                "partName": "Jet Engine Filters",
                 "supplierName": "Haynes International",
                 "supplierId": "SUP024",
                 "supplierCountry": "USA",
@@ -1448,7 +1472,8 @@
                 }
           },
           {
-                "partName": "axv025",
+                "partNumber": "axv025",
+                "partName": "Autopilot Systems",
                 "supplierName": "RTI International Metals",
                 "supplierId": "SUP025",
                 "supplierCountry": "USA",
@@ -1507,7 +1532,8 @@
                 }
               },
               {
-                "partName": "axv026",
+                "partNumber": "axv026",
+                "partName": "Radar Systems",
                 "supplierName": "Metals Unlimited Aerospace",
                 "supplierId": "SUP026",
                 "supplierCountry": "USA",
@@ -1566,7 +1592,8 @@
                 }
               },
               {
-                "partName": "axv027",
+                "partNumber": "axv027",
+                "partName": "Flight Management Systems",
                 "supplierName": "Alcoa",
                 "supplierId": "SUP027",
                 "supplierCountry": "USA",
@@ -1625,7 +1652,8 @@
                 }
               },
               {
-                "partName": "axv028",
+                "partNumber": "axv028",
+                "partName": "Communication Systems",
                 "supplierName": "Arconic",
                 "supplierId": "SUP028",
                 "supplierCountry": "USA",
@@ -1684,7 +1712,8 @@
                 }
           },
           {
-                "partName": "axv029",
+                "partNumber": "axv029",
+                "partName": "Cockpit Displays",
                 "supplierName": "VSMPO-AVISMA",
                 "supplierId": "SUP029",
                 "supplierCountry": "Russia",
@@ -1743,7 +1772,8 @@
                 }
               },
               {
-                "partName": "axv030",
+                "partNumber": "axv030",
+                "partName": "Weather Radar",
                 "supplierName": "Doncasters",
                 "supplierId": "SUP030",
                 "supplierCountry": "United Kingdom",
@@ -1802,7 +1832,8 @@
                 }
               },
               {
-                "partName": "axv031",
+                "partNumber": "axv031",
+                "partName": "Navigation Systems",
                 "supplierName": "Forbes & Manhattan",
                 "supplierId": "SUP031",
                 "supplierCountry": "Canada",
@@ -1861,7 +1892,8 @@
                 }
               },
               {
-                "partName": "axv032",
+                "partNumber": "axv032",
+                "partName": "Transponders",
                 "supplierName": "Carpenter Technology",
                 "supplierId": "SUP032",
                 "supplierCountry": "USA",
@@ -1920,7 +1952,8 @@
                 }
           },
           {
-                "partName": "axv033",
+                "partNumber": "axv033",
+                "partName": "Aircraft Data Recorders",
                 "supplierName": "TW Metals",
                 "supplierId": "SUP033",
                 "supplierCountry": "USA",
@@ -1979,7 +2012,8 @@
                 }
               },
               {
-                "partName": "axv034",
+                "partNumber": "axv034",
+                "partName": "Control Panels",
                 "supplierName": "Alstom",
                 "supplierId": "SUP034",
                 "supplierCountry": "France",
@@ -2038,7 +2072,8 @@
                 }
               },
           {
-                "partName": "axv036",
+                "partNumber": "axv036",
+                "partName": "Generators",
                 "supplierName": "GKN Aerospace",
                 "supplierId": "SUP036",
                 "supplierCountry": "United Kingdom",
@@ -2097,7 +2132,8 @@
                 }
               },
               {
-                "partName": "axv047",
+                "partNumber": "axv047",
+                "partName": "Circuit Breakers",
                 "supplierName": "Sukhoi",
                 "supplierId": "SUP047",
                 "supplierCountry": "Russia",
@@ -2156,7 +2192,8 @@
                 }
           },
           {
-                "partName": "axv048",
+                "partNumber": "axv048",
+                "partName": "Battery Packs",
                 "supplierName": "Embraer",
                 "supplierId": "SUP048",
                 "supplierCountry": "Brazil",
@@ -2215,7 +2252,8 @@
                 }
               },
               {
-                "partName": "axv049",
+                "partNumber": "axv049",
+                "partName": "Power Distribution Units",
                 "supplierName": "Korean Air Aerospace Division",
                 "supplierId": "SUP049",
                 "supplierCountry": "South Korea",
@@ -2274,7 +2312,8 @@
                 }
               },
               {
-                "partName": "axv050",
+                "partNumber": "axv050",
+                "partName": "Wiring and Cables",
                 "supplierName": "India Aeronautics Limited",
                 "supplierId": "SUP050",
                 "supplierCountry": "India",
@@ -2333,7 +2372,8 @@
                 }
           },
           {
-                "partName": "axv051",
+                "partNumber": "axv051",
+                "partName": "Lighting Systems",
                 "supplierName": "Aerospace Corporation of South Africa",
                 "supplierId": "SUP051",
                 "supplierCountry": "South Africa",
@@ -2392,7 +2432,8 @@
                 }
               },
                 {
-                  "partName": "axv101",
+                  "partNumber": "axv101",
+                  "partName": "Electric Motors",
                   "supplierName": "Airbus",
                   "supplierId": "SUP001",
                   "supplierCountry": "France",
@@ -2451,7 +2492,8 @@
                   }
                 },
                 {
-                  "partName": "axv102",
+                  "partNumber": "axv102",
+                  "partName": "AC/DC Inverters",
                   "supplierName": "Rolls-Royce",
                   "supplierId": "SUP002",
                   "supplierCountry": "United Kingdom",
@@ -2510,7 +2552,8 @@
                   }
                 },
                 {
-                  "partName": "axv003",
+                  "partNumber": "axv003",
+                  "partName": "Hydraulic Pumps",
                   "supplierName": "SAFRAN",
                   "supplierId": "SUP003",
                   "supplierCountry": "France",
@@ -2569,7 +2612,8 @@
                   }
                 },
                     {
-                      "partName": "axv104",
+                      "partNumber": "axv104",
+                      "partName": "Hydraulic Fluid Reservoirs",
                       "supplierName": "Bombardier Aerospace",
                       "supplierId": "SUP004",
                       "supplierCountry": "Canada",
@@ -2628,7 +2672,8 @@
                       }
                     },
                     {
-                      "partName": "axv105",
+                      "partNumber": "axv105",
+                      "partName": "Flap Actuators",
                       "supplierName": "Thales Group",
                       "supplierId": "SUP005",
                       "supplierCountry": "France",
@@ -2687,7 +2732,8 @@
                       }
                     },
                     {
-                      "partName": "axv106",
+                      "partNumber": "axv106",
+                      "partName": "Valves",
                       "supplierName": "ST Aerospace",
                       "supplierId": "SUP006",
                       "supplierCountry": "Singapore",
@@ -2746,7 +2792,8 @@
                       }
                     },
                     {
-                      "partName": "axv107",
+                      "partNumber": "axv107",
+                      "partName": "Hydraulic Lines",
                       "supplierName": "Air France Industries KLM",
                       "supplierId": "SUP007",
                       "supplierCountry": "France",
@@ -2805,7 +2852,8 @@
                       }
                     },
                         {
-                          "partName": "axv108",
+                          "partNumber": "axv108",
+                          "partName": "Hydraulic Reservoirs",
                           "supplierName": "Lufthansa Technik",
                           "supplierId": "SUP008",
                           "supplierCountry": "Germany",
@@ -2864,7 +2912,8 @@
                           }
                         },
                         {
-                          "partName": "axv109",
+                          "partNumber": "axv109",
+                          "partName": "Passenger Seats",
                           "supplierName": "Jet Aviation",
                           "supplierId": "SUP009",
                           "supplierCountry": "Switzerland",
@@ -2923,7 +2972,8 @@
                           }
                         },
                         {
-                          "partName": "axv110",
+                          "partNumber": "axv110",
+                          "partName": "Seat Belts and Harnesses",
                           "supplierName": "IHI Corporation",
                           "supplierId": "SUP010",
                           "supplierCountry": "Japan",
@@ -2982,7 +3032,8 @@
                           }
                         },
                         {
-                          "partName": "axv111",
+                          "partNumber": "axv111",
+                          "partName": "Cabin Walls",
                           "supplierName": "Delta TechOps",
                           "supplierId": "SUP011",
                           "supplierCountry": "United States",
@@ -3041,7 +3092,8 @@
                           }
                         },
             {
-                "partName": "axv112",
+                "partNumber": "axv112",
+                "partName": "Overhead Bins",
                 "supplierName": "Aviation Maintenance",
                 "supplierId": "SUP012",
                 "supplierCountry": "United States",
@@ -3100,7 +3152,8 @@
                 }
             },
             {
-                "partName": "axv113",
+                "partNumber": "axv113",
+                "partName": "Galley Equipment",
                 "supplierName": "J.A. Air Center",
                 "supplierId": "SUP013",
                 "supplierCountry": "United States",
@@ -3159,7 +3212,8 @@
                 }
             },
             {
-                "partName": "axv114",
+                "partNumber": "axv114",
+                "partName": "In-Flight Entertainment Systems",
                 "supplierName": "Pratt & Whitney",
                 "supplierId": "SUP014",
                 "supplierCountry": "United States",
@@ -3218,7 +3272,8 @@
                 }
             },
             {
-                "partName": "axv115",
+                "partNumber": "axv115",
+                "partName": "Emergency Oxygen Systems",
                 "supplierName": "Meggitt",
                 "supplierId": "SUP015",
                 "supplierCountry": "United Kingdom",
@@ -3277,7 +3332,8 @@
                 }
             },
             {
-                "partName": "axv016",
+                "partNumber": "axv016",
+                "partName": "Toilet and lavitories",
                 "supplierName": "Hexcel",
                 "supplierId": "SUP016",
                 "supplierCountry": "United States",
@@ -3336,7 +3392,8 @@
                 }
             },
             {
-                "partName": "axv117",
+                "partNumber": "axv117",
+                "partName": "Emergency Oxygen Systems",
                 "supplierName": "Exelis",
                 "supplierId": "SUP017",
                 "supplierCountry": "United States",
@@ -3395,7 +3452,8 @@
                 }
             },
             {
-                "partName": "axv118",
+                "partNumber": "axv118",
+                "partName": "Cabin windows",
                 "supplierName": "Harris Corporation",
                 "supplierId": "SUP018",
                 "supplierCountry": "United States",

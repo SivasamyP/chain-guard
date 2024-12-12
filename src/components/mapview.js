@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import { Map, Marker, Overlay } from 'pigeon-maps';
-import supplierData from '../mockdata/masterdata.json';
+import RiskDetailsPopuppup from './riskdetailspoup';
 
-const MapView = () => {
+const MapView = ({suppliers}) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const openPopup = (supplier) => {
+    setSelectedSupplier(supplier);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setSelectedSupplier(null);
+    setIsPopupOpen(false);
+  };
   const [selectedSupplier, setSelectedSupplier] = useState(null);
 
   return (
@@ -13,7 +23,7 @@ const MapView = () => {
         zoom={2}
         defaultWidth="70%"
       >
-        {supplierData.data.map((supplier, index) => (
+        {suppliers.map((supplier, index) => (
           <Marker
             key={index}
             anchor={[supplier.supplierLat, supplier.supplierLong]}
@@ -32,10 +42,15 @@ const MapView = () => {
               <h4>{selectedSupplier.supplierName}</h4>
               <p><strong>Part:</strong> {selectedSupplier.partName}</p>
               <p><strong>Risk:</strong> {selectedSupplier.overAllRisk}</p>
+              <button onClick={() => openPopup(selectedSupplier)}>Details</button>
             </div>
           </Overlay>
         )}
       </Map>
+
+      {isPopupOpen && selectedSupplier && (
+        <RiskDetailsPopuppup supplier={selectedSupplier} closePopup={closePopup} />
+      )}
 
       {/* {selectedSupplier && (
         <div style={{ width: '30%', padding: '20px' }}>
