@@ -4,6 +4,7 @@ import Sidebar from './components/sidebar';
 import ViewToggle from './components/viewtoggle';
 import TableView from './components/tableview';
 import MapView from './components/mapview';
+import GenAIPoweredSolution from './components/genaipoeredsolution';
 import supplierData from './mockdata/masterdata.json';
 
 const SupplierDashboard = () => {
@@ -12,6 +13,7 @@ const SupplierDashboard = () => {
   const [suppliers, setSuppliers] = useState([]);
   const [filteredSuppliers, setFilteredSuppliers] = useState([]);
   const [filters, setFilters] = useState({
+    partNumber: '',
     partName: '',
     supplierName: '',
     supplierId: '',
@@ -40,7 +42,9 @@ const SupplierDashboard = () => {
 
   // Create uniqueValues object for dropdowns
   const uniqueValues = {
+    partNumber: getUniqueValues('partNumber'),
     partName: getUniqueValues('partName'),
+
     supplierName: getUniqueValues('supplierName'),
     supplierId: getUniqueValues('supplierId'),
     supplierCountry: getUniqueValues('supplierCountry'),
@@ -68,6 +72,7 @@ const SupplierDashboard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const filtered = suppliers.filter((supplier) => {
+      const macthesPartNumber = !filters.partNumber || supplier.partNumber === filters.partNumber;
       const matchesPartName =
         !filters.partName || supplier.partName === filters.partName;
       const matchesSupplierName =
@@ -89,6 +94,7 @@ const SupplierDashboard = () => {
         !filters.operationalRisk || supplier.operationalRisk?.overAllInd === filters.operationalRisk;
   
       return (
+        macthesPartNumber &&
         matchesPartName &&
         matchesSupplierName &&
         matchesSupplierId &&
@@ -107,6 +113,7 @@ const SupplierDashboard = () => {
   // Reset filters
   const resetFilters = () => {
     setFilters({
+      partNumber: '',
       partName: '',
       supplierName: '',
       supplierId: '',
@@ -134,18 +141,23 @@ const SupplierDashboard = () => {
           uniqueValues={uniqueValues}
         />
         <div className="flex-1 overflow-hidden flex flex-col">
-          <ViewToggle viewMode={viewMode} setViewMode={setViewMode} />
-          <div className="flex-1 overflow-auto p-4">
-            {viewMode === 'table' ? (
-              <TableView suppliers={filteredSuppliers} />
-            ) : (
-              <MapView suppliers={filteredSuppliers} />
-            )}
-          </div>
-        </div>
+      <ViewToggle viewMode={viewMode} setViewMode={setViewMode} />
+      <div className="flex-1 overflow-auto p-4">
+        {viewMode === 'table' ? (
+          <TableView suppliers={filteredSuppliers} />
+        ) : viewMode === 'map' ? (
+          <MapView suppliers={filteredSuppliers} />
+        ) : (
+          <GenAIPoweredSolution suppliers={filteredSuppliers} /> 
+        )}
+      </div>
+    </div>
       </div>
     </div>
   );
 };
 
 export default SupplierDashboard;
+
+ 
+
