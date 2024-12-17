@@ -1,0 +1,53 @@
+{
+    "data": [
+     
+      
+      {
+        "supplierCountry": "United States",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },{
+        "supplierCountry": "Germany",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },{
+        "supplierCountry": "Japan",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },
+      {
+        "supplierCountry": "United Kingdom",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },
+      {
+        "supplierCountry": "Russia",
+        
+        "countryRisk": "High",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "High"
+      },
+      {
+        "supplierCountry": "Canada",
+        
+        "countryRisk": "Low",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      }
+
+    ]
+}
