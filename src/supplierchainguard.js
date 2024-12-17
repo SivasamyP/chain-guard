@@ -5,8 +5,9 @@ import ViewToggle from './components/viewtoggle';
 import TableView from './components/tableview';
 import MapView from './components/mapview';
 import GenAIPoweredSolution from './components/genaipoeredsolution';
+import TreeGraph from './components/treegraph';
+import PredictiveAnalysis from './components/predictanalysis';
 import supplierData from './mockdata/masterdata.json';
-
 const SupplierDashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
   const [viewMode, setViewMode] = useState('table');
@@ -147,9 +148,11 @@ const SupplierDashboard = () => {
           <TableView suppliers={filteredSuppliers} />
         ) : viewMode === 'map' ? (
           <MapView suppliers={filteredSuppliers} />
-        ) : (
+        ) :viewMode === 'genai' ? (
           <GenAIPoweredSolution suppliers={filteredSuppliers} /> 
-        )}
+        ):viewMode === 'supplierview' ? (
+          <TreeGraph /> 
+        ):<PredictiveAnalysis/>}
       </div>
     </div>
       </div>
