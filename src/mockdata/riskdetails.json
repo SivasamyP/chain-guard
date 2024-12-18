@@ -9,6 +9,14 @@
         "naturalHazardRisk":  "Medium",
          
         "financialRisk": "Medium"
+      },
+      {
+        "supplierCountry": "USA",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
       },{
         "supplierCountry": "Germany",
         
@@ -47,7 +55,101 @@
         "naturalHazardRisk":  "Low",
          
         "financialRisk": "Low"
+      },
+      {
+        "supplierCountry": "France",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },
+      {
+        "supplierCountry": "Singapore",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "low"
+      },
+      {
+        "supplierCountry": "Switzerland",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      },
+      {
+        "supplierCountry": "Austria",
+        
+        "countryRisk": "Low",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      },{
+        "supplierCountry": "Australia",
+        
+        "countryRisk": "Low",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      },{
+        "supplierCountry": "Belgium",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      },{
+        "supplierCountry": "China",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
       }
+      ,{
+        "supplierCountry": "South Africa",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      }
+      ,{
+        "supplierCountry": "India",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "Medium"
+      }
+      ,{
+        "supplierCountry": "Russia",
+        
+        "countryRisk": "High",
+        "naturalHazardRisk":  "Medium",
+         
+        "financialRisk": "High"
+      }
+      ,{
+        "supplierCountry": "Sweden",
+        
+        "countryRisk": "Low",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      },{
+        "supplierCountry": "Sweden",
+        
+        "countryRisk": "Medium",
+        "naturalHazardRisk":  "Low",
+         
+        "financialRisk": "Low"
+      }
+
+      
 
     ]
 }

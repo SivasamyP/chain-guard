@@ -29,8 +29,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
         switch (riskValue) {
             case 'Negative':
                 return 'bg-red-500 text-black';
-            case 'Medium':
-                return 'bg-yellow-500 text-black';
+            
             case 'Positive':
                 return 'bg-green-500 text-black';
             default:
@@ -54,6 +53,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': '',
                 },
                 body: JSON.stringify(body),
             });
@@ -137,7 +137,18 @@ const GenAIPoweredSolution = ({ suppliers }) => {
                 `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=publishedAt&pageSize=5&apiKey=${newsApiKey}`
             );
             const articles = response.data.articles;
-            analyzeRisk(articles, supplierName);
+            const filteredArticles = articles.filter(article => article.title !== "[Removed]");
+            if (filteredArticles && filteredArticles.length > 0) {
+              analyzeRisk(filteredArticles, supplierName);
+    
+            } else {
+                setIsNewsPopUpOpen(true);
+
+                setIsPageLoading(false);
+    
+            }
+
+           
         } catch (error) {
             console.error("Error fetching news:", error);
         }
@@ -161,6 +172,7 @@ const GenAIPoweredSolution = ({ suppliers }) => {
                 {
                     headers: {
                         "Content-Type": "application/json",
+                        'Authorization': '',
                     },
                 }
             );
@@ -261,19 +273,27 @@ const GenAIPoweredSolution = ({ suppliers }) => {
 
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto relative">
                         <div className="flex justify-between items-center mb-2">
-                            <h2 className="text-xl font-semibold">
-                                Sentiment Analysis: {sentimentalRisk}
-                            </h2>
+                           {sentimentalRisk && <h2 className="text-xl font-semibold">
+                                Sentiment Analysis:{" "}
+                                <span
+                                    className={`px-4 py-2 rounded-full text-black ${getSentimentColor(
+                                        sentimentalRisk
+                                    )}`}
+                                >
+                                    {sentimentalRisk}
+                                </span>
+                            </h2>} 
                             <FiX
                                 onClick={newsPopupClose}
                                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 cursor-pointer text-2xl"
                             />
                         </div>
-                        <div className="flex justify-between items-center mb-2">
+
+                        {sentimentalRisk && <div className="flex justify-between items-center mb-2">
                             <h2 className="text-xl font-semibold">Top News about  Supplier</h2>
 
 
-                        </div>
+                        </div>}
 
                         {!Array.isArray(news) || news.length === 0 ? (
                             <p>No news found about the supplier.</p>

@@ -28,8 +28,7 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
     switch (riskValue) {
       case 'Negative':
         return 'bg-red-500 text-black';
-      case 'Medium':
-        return 'bg-yellow-500 text-black';
+      
       case 'Positive':
         return 'bg-green-500 text-black';
       default:
@@ -46,13 +45,21 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
 
         setSubmitStatus({ type: 'loading', message: 'Submitting...' });
 
-        const newsApiKey = ""; 
+        const newsApiKey = ""; // Replace with your News API key
         const query = `"${supplier.supplierName}"`;
         const response = await axios.get(
           `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=publishedAt&pageSize=5&apiKey=${newsApiKey}`
         );
+
         const articles = response.data.articles;
-        analyzeRisk(articles, supplier.supplierName);
+        const filteredArticles = articles.filter(article => article.title !== "[Removed]");
+        if (filteredArticles && filteredArticles.length > 0) {
+          analyzeRisk(filteredArticles, supplier.supplierName);
+
+        } else {
+          setLoading(false);
+
+        }
       } catch (error) {
         console.error("Error fetching news:", error);
       }
@@ -79,6 +86,7 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
         {
           headers: {
             "Content-Type": "application/json",
+            'Authorization': '',
           },
         }
       );
@@ -125,16 +133,16 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
       )}
 
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto grid grid-cols-[2fr_1fr] gap-4 relative">
-      {/* <button
+        {/* <button
     onClick={closePopup}
     className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700"
   >
     Close
   </button> */}
-  <FiX
-    onClick={closePopup}
-    className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 cursor-pointer text-2xl"
-  />
+        <FiX
+          onClick={closePopup}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 cursor-pointer text-2xl"
+        />
         <div> <span className="text-xl font-bold mb-4 pr-5">Supplier Risk Details - {supplier.supplierName}</span>
 
           <span className={`inline-flex items-center justify-center w-24 h-8 text-center rounded-full pl-3 ${getRiskColor(supplier.overAllRisk)}`}>
@@ -385,9 +393,13 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
         </div>
         <div>
           <span className="text-xl font-bold mb-4 pr-5">Sentiment Analysis - {supplier.supplierName}</span>
-          <span className={`inline-flex items-center justify-center w-24 h-8 text-center rounded-full pl-3 ${getSentimentColor(sentimentalRisk)}`}>
-            {sentimentalRisk}
-          </span>
+          {sentimentalRisk && (
+            <span
+              className={`inline-flex items-center justify-center w-24 h-8 text-center rounded-full pl-3 ${getSentimentColor(sentimentalRisk)}`}
+            >
+              {sentimentalRisk}
+            </span>
+          )}
 
           {!Array.isArray(news) || news.length === 0 ? (
             <p>No news found about the supplier.</p>
@@ -420,14 +432,14 @@ const RiskDetailsPopup = ({ supplier, closePopup }) => {
           )}
         </div>
         <div className="mt-6 text-right">
-        <button
-          onClick={closePopup}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg"
-        >
-          Close
-        </button>
+          <button
+            onClick={closePopup}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+          >
+            Close
+          </button>
         </div>
-        
+
       </div>
     </div>
   );
